@@ -1,2 +1,2 @@
-# DBFormer
-DBFormer: Dilated Boundary-aware Transformer for Skin Lesion Segmentation
+# BDFormer
+DBFormer: Boundary-aware Dual-decoder Transformer for Skin Lesion Segmentation
