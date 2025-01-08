@@ -1,0 +1,52 @@
+2025-01-08 19:36:16 - #----------Config info----------#
+2025-01-08 19:36:16 - network: BDFormer,
+2025-01-08 19:36:16 - test_weights: ,
+2025-01-08 19:36:16 - datasets: isic18,
+2025-01-08 19:36:16 - data_path: ./Datasets/isic2018/,
+2025-01-08 19:36:16 - criterion: BceDiceLoss(
+  (bce): BCELoss(
+    (bceloss): BCELoss()
+  )
+  (dice): DiceLoss()
+),
+2025-01-08 19:36:16 - num_classes: 1,
+2025-01-08 19:36:16 - input_size_h: 256,
+2025-01-08 19:36:16 - input_size_w: 256,
+2025-01-08 19:36:16 - input_channels: 3,
+2025-01-08 19:36:16 - distributed: False,
+2025-01-08 19:36:16 - local_rank: -1,
+2025-01-08 19:36:16 - num_workers: 0,
+2025-01-08 19:36:16 - seed: 42,
+2025-01-08 19:36:16 - world_size: None,
+2025-01-08 19:36:16 - rank: None,
+2025-01-08 19:36:16 - amp: False,
+2025-01-08 19:36:16 - batch_size: 4,
+2025-01-08 19:36:16 - epochs: 200,
+2025-01-08 19:36:16 - work_dir: results/BDFormer_isic18_Wednesday_08_January_2025_19h_36m_16s/,
+2025-01-08 19:36:16 - print_interval: 100,
+2025-01-08 19:36:16 - val_interval: 20,
+2025-01-08 19:36:16 - save_interval: 1,
+2025-01-08 19:36:16 - threshold: 0.5,
+2025-01-08 19:36:16 - train_transformer: Compose(
+    <utils.myNormalize_multi object at 0x7f50297cd5b0>
+    <utils.myToTensor_multi object at 0x7f50297cd7f0>
+    <utils.myRandomHorizontalFlip_multi object at 0x7f50297cd820>
+    <utils.myRandomVerticalFlip_multi object at 0x7f50297cdd30>
+    <utils.myRandomRotation_multi object at 0x7f50297cd310>
+    <utils.myResize_multi object at 0x7f5026487e50>
+),
+2025-01-08 19:36:16 - test_transformer: Compose(
+    <utils.myNormalize_multi object at 0x7f5026185d60>
+    <utils.myToTensor_multi object at 0x7f5026185e80>
+    <utils.myResize_multi object at 0x7f5026185eb0>
+),
+2025-01-08 19:36:16 - opt: AdamW,
+2025-01-08 19:36:16 - lr: 0.0005,
+2025-01-08 19:36:16 - betas: (0.9, 0.999),
+2025-01-08 19:36:16 - eps: 1e-08,
+2025-01-08 19:36:16 - weight_decay: 0.01,
+2025-01-08 19:36:16 - amsgrad: False,
+2025-01-08 19:36:16 - sch: CosineAnnealingLR,
+2025-01-08 19:36:16 - T_max: 50,
+2025-01-08 19:36:16 - eta_min: 1e-05,
+2025-01-08 19:36:16 - last_epoch: -1,
